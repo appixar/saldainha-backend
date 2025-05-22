@@ -104,6 +104,10 @@ app.post('/chat', async (req, res) => {
   }
 });
 
+app.get('/', async (req, res) => {
+  res.json({ response: 'OK' });
+});
+
 app.listen(PORT, () => {
   console.log(`✅ API rodando em http://localhost:${PORT}`);
 });
