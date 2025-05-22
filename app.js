@@ -27,6 +27,7 @@ const callbackManager = CallbackManager.fromHandlers({
 // Modelo com rastreamento de uso
 const model = new ChatOpenAI({
   temperature: 0,
+  openAIApiKey: process.env.OPENAI_API_KEY,
   callbackManager,
 });
 
